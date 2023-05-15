@@ -1,0 +1,211 @@
+:root{
+  --main-color:#66347F;
+  --main-font:'Poppins',
+    sans-serif;
+  --main-color-font:whitesmoke;
+}
+
+body{
+ margin:0;
+ padding:0;
+ background-color:#F9F7FE;
+ font-size: 62.5%;
+ font-family: var(--main-font);
+ color:var(--main-color-font);
+}
+
+.profile-container{
+  margin: 0 auto;
+  margin-bottom: 40px;
+  max-width: 100%;
+  height: auto;
+  background-color: var(--main-color);
+  box-sizing: border-box;
+}
+
+main{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin: 0 auto;
+ margin-top: 20px;
+ padding: 20px;
+ width:80%;
+}
+
+main p{
+  text-align: justify;
+}
+
+main h1, h2{
+ margin-top: 30px;
+ text-align: center;
+}
+
+
+h1{
+ font-size:1.6rem;
+}
+
+h2{
+ font-size:1.2rem;
+}
+
+p, th, td {
+  font-size: 1rem;
+}
+
+.terminal-container {
+ margin:  0 auto;
+ padding:10px;
+ width: 90%;
+}
+
+.terminal-container table{
+ margin: 0 auto;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: 8px;
+  font-size: 1rem;
+}
+
+table, th, td{
+  border: 1px solid gray;
+  border-collapse: collapse;
+}
+
+h3{
+ font-size:1.1rem;
+}
+
+.alias-container{
+ margin: 0 auto;
+ padding: 20px;
+ width: calc(100% - 70px);
+}
+
+.alias-container td{
+  font-size: 0.9rem;
+}
+
+.link-container h4{
+  text-align: center;
+  font-size: 1rem;
+}
+
+.link-container div {
+  margin: 0 auto;
+  width:60px;
+  height: 60px;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  transition: all 0.3s ease-out;
+}
+
+img:hover {
+  width: 80px;
+  height: 80px;
+}
+
+footer{
+ margin-top: 30px;
+ overflow: hidden;
+ height: auto;
+ background-color: rgb(232, 157, 232);text-align: center;
+ color: rgb(65, 65, 65);
+}
+
+footer p{
+  margin-top: 20px;
+  font-size: 0.6rem;
+}
+
+footer a{
+  color: rgb(31, 154, 113);
+  text-decoration: none;
+}
+
+footer a:hover{
+  color:rgb(145, 0, 118);
+}
+
+/* desktop size */
+@media screen and (min-width: 1024px){
+  .profile-container {
+      max-width: 800px;
+      border-radius: 8px;
+      box-sizing: border-box;
+      border: 2px solid whitesmoke;
+      box-shadow: 7px 17px 34px -6px rgba(99, 97, 99, 1);
+    }
+  
+    h1 {
+      font-size: 1.8rem;
+    }
+  
+    h2 {
+      font-size: 1.6rem;
+    }
+  
+    p,
+    th,
+    td {
+      font-size: 1.3rem;
+    }
+  
+    table,
+    th,
+    td {
+      border: 1px solid gray;
+      border-collapse: collapse;
+    }
+  
+    h3 {
+      font-size: 1.4rem;
+    }
+
+    .link-container div {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .alias-container td {
+      font-size: 0.9rem;
+    }
+  
+    .link-container h4 {
+      font-size: 1.3rem;
+    }
+
+    img {
+      width: 80px;
+      height: 80px;
+      
+    }
+    
+    img:hover {
+      width: 100px;
+      height: 100px;
+    }
+  
+    footer p {
+      font-size: 0.8rem;
+    }
+}
